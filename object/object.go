@@ -39,12 +39,12 @@ func (b *Boolean) Inspect() string {
 	return fmt.Sprintf("%t", b.Value)
 }
 
-type NUll struct{}
+type Null struct{}
 
-func (n *NUll) Type() ObjectType {
+func (n *Null) Type() ObjectType {
 	return NULL_OBJ
 }
 
-func (n *NUll) Inspect() string {
+func (n *Null) Inspect() string {
 	return "null"
 }
